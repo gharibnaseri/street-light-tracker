@@ -2,6 +2,11 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Menulist from './component/Menulist'
+import { Menu } from '@headlessui/react'
+import Droplist from './component/Droplist'
+import MyModal from './component/Modal'
+
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -86,24 +91,22 @@ export default function Example() {
         <div className="grid grid-cols-3 gap-4 content-height">
           <div className='col-span-2 content-holder '>content holder 1</div>
           <div className='content-holder '>
-            
-          <div className="m-1 flex justify-end gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Add Item
-              </a>
-              
+
+            <div className="m-1 flex justify-end gap-x-6">
+
+              <Droplist />
+              <MyModal />
+
             </div>
             <hr />
 
-              </div>
-
-
           </div>
 
+
         </div>
+
+
       </div>
-      )
+    </div>
+  )
 }
