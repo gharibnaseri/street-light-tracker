@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer components {
+  .content-holder{
+    @apply bg-gray-50  h-full shadow-md;
+  }
+}
+
+@layer utilities{
+  .content-height {
+    height : calc(100vh - 80px)
+  }
+}
