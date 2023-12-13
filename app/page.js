@@ -95,7 +95,7 @@ export default function Example() {
             <div className="m-1 flex justify-end gap-x-6">
 
               <Droplist />
-              <MyModal />
+              <MyModal title='ADD INFORMATION' description='You can input your latitude and longitude or add the file contains the coordinates.'/>
 
             </div>
             <hr />

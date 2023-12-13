@@ -5,7 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 export default function Droplist() {
     const [ModalActivation, setModalActivation ]= useState (false) 
   return (
-    <div className="fixed top-16 w-56 text-right">
+    <div className=" top-16 w-56 text-right">
       <Menu as="div" className="relative inline-block text-left">
         <div>
           <Menu.Button className="inline-flex w-full justify-center rounded-md bg-indigo-600/100 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-300/100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
